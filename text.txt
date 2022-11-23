@@ -1,1 +1,163 @@
-Im the best
+
+C:\Users\ajadhao>git --version
+git version 2.38.1.windows.1
+
+C:\Users\ajadhao>cd..
+
+C:\Users>cd..
+
+C:\>cd\deskto
+The system cannot find the path specified.
+
+C:\>cd\desktop
+The system cannot find the path specified.
+
+C:\>dir
+ Volume in drive C has no label.
+ Volume Serial Number is E8F3-E3BC
+
+ Directory of C:\
+
+11/08/2022  04:26 PM    <DIR>          Dell
+11/23/2022  09:52 AM    <DIR>          Intel
+12/07/2019  02:44 PM    <DIR>          PerfLogs
+11/23/2022  09:11 AM    <DIR>          Program Files
+11/23/2022  09:11 AM    <DIR>          Program Files (x86)
+11/22/2022  11:20 AM    <DIR>          temp
+11/23/2022  09:53 AM    <DIR>          Users
+11/23/2022  09:53 AM    <DIR>          Windows
+               0 File(s)              0 bytes
+               8 Dir(s)  429,369,114,624 bytes free
+
+C:\>cd..
+
+C:\>dir
+ Volume in drive C has no label.
+ Volume Serial Number is E8F3-E3BC
+
+ Directory of C:\
+
+11/08/2022  04:26 PM    <DIR>          Dell
+11/23/2022  09:52 AM    <DIR>          Intel
+12/07/2019  02:44 PM    <DIR>          PerfLogs
+11/23/2022  09:11 AM    <DIR>          Program Files
+11/23/2022  09:11 AM    <DIR>          Program Files (x86)
+11/22/2022  11:20 AM    <DIR>          temp
+11/23/2022  09:53 AM    <DIR>          Users
+11/23/2022  09:53 AM    <DIR>          Windows
+               0 File(s)              0 bytes
+               8 Dir(s)  429,369,114,624 bytes free
+
+C:\>pwd
+'pwd' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\>$pwd
+'$pwd' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\>cd gitDemo
+
+C:\gitDemo>git init
+Initialized empty Git repository in C:/gitDemo/.git/
+
+C:\gitDemo>git add text.txt
+
+C:\gitDemo>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   text.txt
+
+
+C:\gitDemo>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   text.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   text.txt
+
+
+C:\gitDemo>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+C:\gitDemo>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   text.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   text.txt
+
+
+C:\gitDemo>git add text.txt
+
+C:\gitDemo>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   text.txt
+
+
+C:\gitDemo>git log
+fatal: your current branch 'master' does not have any commits yet
+
+C:\gitDemo>git commit -m"my first git"
+[master (root-commit) 10bddba] my first git
+ Committer: Akash Jadhao <akash.jadhao@morningstar.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text.txt
+
+C:\gitDemo>git log
+commit 10bddbabce95d2239a195b501013ce51f339a672 (HEAD -> master)
+Author: Akash Jadhao <akash.jadhao@morningstar.com>
+Date:   Wed Nov 23 10:34:05 2022 +0530
+
+    my first git
+
+C:\gitDemo>git log help
+fatal: ambiguous argument 'help': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+C:\gitDemo>git help log
+
+C:\gitDemo>git log --oneline
+10bddba (HEAD -> master) my first git
+
+C:\gitDemo>git log --oneline --graph
+* 10bddba (HEAD -> master) my first git
