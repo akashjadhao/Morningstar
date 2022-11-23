@@ -161,3 +161,13 @@ C:\gitDemo>git log --oneline
 
 C:\gitDemo>git log --oneline --graph
 * 10bddba (HEAD -> master) my first git
+
+
+
+C:\gitDemo>git clone https://github.com/akashjadhao/Morningstar.git
+Cloning into 'Morningstar'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
